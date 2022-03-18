@@ -12,10 +12,11 @@
     <title><?=$data['title']?></title>
 </head>
 <body>
-    <?php foreach($data['fruits'] as $fruit): ?>
-        <h1><?=$fruit->name?></h1> id: <?=$fruit->id?>
-        <p><?=$fruit->color?></p>
-        <p><?=$fruit->price?></p>
+    <?php foreach($data['countries'] as $countries): ?>
+        <h1><?=$countries->name?></h1> id: <?=$countries->id?>
+        <p><?=$countries->capitalCity?></p>
+        <p><?=$countries->continet?></p>
+        <p><?=$countries->population?></p>
     <?php endforeach; ?>
 </body>
 </html>
